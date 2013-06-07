@@ -1,6 +1,6 @@
 #
 # Makefile for TINY
-# Yacc/Bison Version
+# Lex & Yacc Version
 # by Kahaani, 2013.06
 #
 
