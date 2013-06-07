@@ -1,7 +1,7 @@
 #
 # Makefile for TINY
 # Yacc/Bison Version
-# by Kahaani, 2013-06
+# by Kahaani, 2013.06
 #
 
 vpath %.h .
@@ -9,7 +9,7 @@ vpath %.h ..
 
 CC = gcc
 LEX = flex
-YYAC = bison
+YACC = bison
 
 CFLAGS = -I. -I..
 
