@@ -93,6 +93,7 @@ void emitRestore(void)
  * a = the absolute location in memory
  * c = a comment to be printed if TraceCode is TRUE
  */
+// 使用该函数的原因是：没有zero寄存器，只能迂回实现
 void emitRM_Abs( char *op, int r, int a, char * c)
 { fprintf(code,"%3d:  %5s  %d,%d(%d) ",
                emitLoc,op,r,a-(emitLoc+1),pc); // 绝对地址先转成相对地址，因为最终还是要和pc相加

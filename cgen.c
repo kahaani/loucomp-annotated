@@ -66,6 +66,7 @@ static void genStmt( TreeNode * tree)
          /* generate code for test */
          cGen(p2);
          // 这个不是回填地址，是在当前位置写入保存地址
+         // 用到_Abs()的只有三处，另外两处在上面IfK中，用到_Abs()的原因是没有zero寄存器
          emitRM_Abs("JEQ",ac,savedLoc1,"repeat: jmp back to body");
          if (TraceCode)  emitComment("<- repeat") ;
          break; /* repeat */
